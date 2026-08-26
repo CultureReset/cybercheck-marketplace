@@ -39,7 +39,7 @@ committed.
 
 | Plugin | What it is |
 |---|---|
-| `grok-build` | Grok Build bridge — review, critique, delegate. Needs the `grok` CLI on PATH. |
+| `grok-build` | Grok Build bridge — review, critique, delegate. **Vendored** in `external_plugins/`. Needs the `grok` CLI on PATH. |
 | `cloudflare` | Workers, Pages, D1, R2, KV |
 | `vercel` | Deployments, logs, domains — where the API and dashboards ship |
 | `netlify`, `railway` | The other two deploy targets |
@@ -48,7 +48,30 @@ committed.
 | `browser-use`, `browser-use-qa` | Browser automation and QA flows |
 | `superpowers`, `base44`, `wix`, `tinyfish` | General and vendor skill sets |
 
-### Why it indexes instead of vendoring
+### The one exception
+
+`grok-build` is a copy, not a reference. It lives in
+`external_plugins/grok-build/` with its Apache 2.0 `LICENSE` and `NOTICE`
+alongside, and `VENDORED.md` records the upstream commit, how to refresh it,
+and how to verify it. It is copied because it is the plugin we intend to build
+*on* rather than merely use, and a reference cannot be modified.
+
+Upstream's own test suite passes against the copy — 60 of 64; the other four
+test xAI's repository scaffolding rather than the plugin. `VENDORED.md` names
+them.
+
+The plugin does nothing without the CLI:
+
+```bash
+curl -fsSL https://x.ai/cli/install.sh | bash
+grok login                    # or: export XAI_API_KEY=xai-...
+grok login --device-auth      # headless hosts with no browser
+```
+
+The CLI's source is [xai-org/grok-build](https://github.com/xai-org/grok-build),
+also Apache 2.0, if you would rather build it than install a binary.
+
+### Why everything else indexes instead of vendoring
 
 Every entry is a git reference, not a copy. Nothing here holds anybody else's
 source. Upstream fixes arrive on the next `/plugin marketplace update`, no

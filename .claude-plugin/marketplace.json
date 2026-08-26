@@ -11,13 +11,9 @@
   "plugins": [
     {
       "name": "grok-build",
-      "description": "Grok Build bridge: review, critique, and delegate work to Grok from inside Claude Code. Requires the grok CLI on PATH.",
+      "description": "Grok Build bridge: review, critique, and delegate work to Grok from inside Claude Code. Vendored copy \u2014 needs the grok CLI on PATH.",
       "category": "development",
-      "source": {
-        "source": "git-subdir",
-        "url": "xai-org/grok-build-plugin-cc",
-        "path": "plugins/grok-build"
-      }
+      "source": "./external_plugins/grok-build"
     },
     {
       "name": "cloudflare",
