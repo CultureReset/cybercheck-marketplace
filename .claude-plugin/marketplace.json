@@ -1,0 +1,147 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "cybercheck",
+  "owner": {
+    "name": "CyberCheck"
+  },
+  "metadata": {
+    "description": "Tools CyberCheck builds with, indexed rather than vendored.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "grok-build",
+      "description": "Grok Build bridge: review, critique, and delegate work to Grok from inside Claude Code. Requires the grok CLI on PATH.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "xai-org/grok-build-plugin-cc",
+        "path": "plugins/grok-build"
+      }
+    },
+    {
+      "name": "cloudflare",
+      "description": "Workers, Pages, D1, R2, KV, and the rest of the Cloudflare developer platform.",
+      "category": "infrastructure",
+      "source": {
+        "source": "github",
+        "repo": "cloudflare/skills"
+      }
+    },
+    {
+      "name": "vercel",
+      "description": "Deployments, build status, logs, and domains. gcr-api-clean and the dashboards deploy here.",
+      "category": "deployment",
+      "source": {
+        "source": "github",
+        "repo": "vercel/vercel-plugin"
+      }
+    },
+    {
+      "name": "netlify",
+      "description": "Netlify build context and tools.",
+      "category": "deployment",
+      "source": {
+        "source": "github",
+        "repo": "netlify/context-and-tools"
+      }
+    },
+    {
+      "name": "railway",
+      "description": "Railway deployment and service management.",
+      "category": "deployment",
+      "source": {
+        "source": "git-subdir",
+        "url": "railwayapp/railway-skills",
+        "path": "plugins/railway"
+      }
+    },
+    {
+      "name": "stripe",
+      "description": "Payments, subscriptions, and webhooks. The Claude build, not the Grok one.",
+      "category": "payments",
+      "source": {
+        "source": "git-subdir",
+        "url": "stripe/ai",
+        "path": "providers/claude/plugin"
+      }
+    },
+    {
+      "name": "mongodb",
+      "description": "MongoDB query, schema, and aggregation help.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "mongodb/agent-skills",
+        "path": "plugins/mongodb"
+      }
+    },
+    {
+      "name": "mongodb-atlas",
+      "description": "Atlas cluster, index, and Search administration.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "mongodb/agent-skills",
+        "path": "plugins/mongodb-atlas"
+      }
+    },
+    {
+      "name": "browser-use",
+      "description": "Browser automation agent.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "browser-use/plugins",
+        "path": "browser-use"
+      }
+    },
+    {
+      "name": "browser-use-qa",
+      "description": "QA flows built on browser-use.",
+      "category": "testing",
+      "source": {
+        "source": "git-subdir",
+        "url": "browser-use/plugins",
+        "path": "qa"
+      }
+    },
+    {
+      "name": "superpowers",
+      "description": "A large general-purpose skill collection.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    {
+      "name": "tinyfish",
+      "description": "Web agent integrations.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "tinyfish-io/tinyfish-web-agent-integrations",
+        "path": "claude"
+      }
+    },
+    {
+      "name": "wix",
+      "description": "Wix site and app development.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "wix/skills"
+      }
+    },
+    {
+      "name": "base44",
+      "description": "Base44 app development.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "base44/skills"
+      }
+    }
+  ]
+}
