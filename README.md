@@ -22,6 +22,17 @@ nor installation state.
 `declared_events`, `declared_surfaces`, `declared_bindings`,
 `runtime_requirements`, `install_requirements`, `pricing`
 
+## The contract
+
+`contract/app-manifest.v1.json` is the app manifest schema — what a developer
+writes and the only thing the platform reads about an app. It lives here because
+the catalog owns what a version declares; the runtime in `cybercheck-orchestrator`
+vendors a copy and fails its tests if the two drift. See
+[`contract/README.md`](contract/README.md).
+
+The `declared_*` tables in this schema are the normalised projection of that
+manifest, one row per thing declared.
+
 ## Two decisions worth knowing
 
 **The manifest is stored whole, and also normalised.** `product_versions.manifest`
