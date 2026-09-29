@@ -22,6 +22,24 @@ nor installation state.
 | Canonical business facts | `cybercheck-data-schema` |
 | Product source code | the product's own repo |
 
+<!-- branches:start -->
+## Branches
+
+*Read from GitHub on 2026-09-29. 4 branches.*
+
+- **Default branch on GitHub:** `cybercheck-main`.
+- **`claude/repo-code-analysis-y4n1k7`** is where this README and the audit fixes live. It contains every commit on `cybercheck-main` and more (this README, the audit fixes and the screenshots).
+- **2 other branches hold commits that `claude/repo-code-analysis-y4n1k7` does not have.** The newest is `claude/modular-web-app-store-32zh3e` (last commit 2026-08-29, 1 commit not in the work branch). Check those before assuming the work branch is the whole story.
+
+| Branch | Last commit | Not in the work branch | Last commit message |
+| --- | --- | --- | --- |
+| `claude/repo-code-analysis-y4n1k7` (work branch) | 2026-09-29 | - | this README and the audit fixes |
+| `claude/modular-web-app-store-32zh3e` | 2026-08-29 | 1 | feat(contract): Add the app manifest schema |
+| `claude/new-session-66c2e9` | 2026-08-26 | 2 | feat(marketplace): Vendor the Grok Build plugin |
+| `cybercheck-main` (default) | 2026-08-26 | 0 | feat(marketplace): Add the catalog schema |
+
+<!-- branches:end -->
+
 ## Tables
 
 **Catalog** — `publishers`, `products`, `categories`, `product_categories`,
