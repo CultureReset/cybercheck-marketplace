@@ -1,7 +1,9 @@
 > **Status: an earlier attempt, not part of Ghost.** Migrations and tests only,
 > no service and no screen: the catalog (publishers, products, versions) for the
 > earlier app-store design. That role is now `store_items` and `store_versions` in
-> `gcr-api-clean`, which keeps this repo's app-manifest v1 shape for app versions.
+> `gcr-api-clean`, which keeps the app-manifest v1 shape for app versions. That
+> schema (`contract/app-manifest.v1.json`) is not on this branch; it exists on the
+> `claude/modular-web-app-store-32zh3e` branch of this repo.
 
 ---
 
