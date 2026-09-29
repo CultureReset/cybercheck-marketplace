@@ -22,13 +22,15 @@ nor installation state.
 | Canonical business facts | `cybercheck-data-schema` |
 | Product source code | the product's own repo |
 
+
+
 <!-- branches:start -->
 ## Branches
 
 *Read from GitHub on 2026-09-29. 4 branches.*
 
-- **Default branch on GitHub:** `cybercheck-main`.
-- **`claude/repo-code-analysis-y4n1k7`** is where this README and the audit fixes live. It contains every commit on `cybercheck-main` and more (this README, the audit fixes and the screenshots).
+- **Default branch on GitHub:** `cybercheck-main`. It does **not** yet have this README or the audit fixes; those are on `claude/repo-code-analysis-y4n1k7`, which contains every commit of `cybercheck-main` and more, so it can be fast-forwarded without losing anything.
+- **`claude/repo-code-analysis-y4n1k7`** is where the README audit, the screenshots and the fixes were made.
 - **2 other branches hold commits that `claude/repo-code-analysis-y4n1k7` does not have.** The newest is `claude/modular-web-app-store-32zh3e` (last commit 2026-08-29, 1 commit not in the work branch). Check those before assuming the work branch is the whole story.
 
 | Branch | Last commit | Not in the work branch | Last commit message |
