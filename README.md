@@ -1,3 +1,10 @@
+> **Status: an earlier attempt, not part of Ghost.** Migrations and tests only,
+> no service and no screen: the catalog (publishers, products, versions) for the
+> earlier app-store design. That role is now `store_items` and `store_versions` in
+> `gcr-api-clean`, which keeps this repo's app-manifest v1 shape for app versions.
+
+---
+
 # cybercheck-marketplace
 
 **The catalog.** This is Step 3 of the App Store foundation.
